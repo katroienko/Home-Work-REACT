@@ -1,11 +1,10 @@
-import './App.css'
-// import ImageComponent from './components/App/ImageComponent.jsx'
-// import VideoComponent from './components/App/VideoComponent.jsx'
-// import ParagraphsComponent from './components/App/ParagraphsComponent.jsx'
+import ListsComponent from '../ListsComponent/ListsComponent'
 import VideoComponent from '../VideoComponent/VideoComponent'
 import ImageComponent from '../ImageComponent/ImageComponent'
 import ParagraphsComponent from '../ParagraphsComponent/ParagraphsComponent'
 import RandomPhrase from '../RandomPhrase/RandomPhrase'
+import './App.css'
+
 
 function App() {
   return (
@@ -14,6 +13,7 @@ function App() {
     <VideoComponent/>
     <ParagraphsComponent/>
     <RandomPhrase />
+    <ListsComponent />
     </>
   )
 }
