@@ -1,9 +1,8 @@
-import './App.css';
-import Test from './Test';
-import ShowAuto from './mashina-list/mashina-list';
 import Greeting from './Greeting/Greeting';
 import ShoppingList from './ShoppingList/ShoppingList';
 import OrderStatus from './OrderStatus/OrderStatus';
+import './App.css';
+
 
 function App() {
   
@@ -22,9 +21,6 @@ function App() {
         <Greeting name="Алиса" />
         {/* <Greeting /> */}
       </div>
-      <ShowAuto />
-      <Test />
-
     </>
   );
 }
