@@ -1,0 +1,38 @@
+.guest-list {
+    padding-left: 20px; /* Оставляем отступ для номеров */
+}
+
+.person-item {
+    list-style-type: decimal; /* Сохраняем номера */
+}
+
+.person-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Размещает имя слева, кнопку справа */
+    align-items: center; /* Выравнивает элементы по вертикали */
+    width: 100%;
+}
+
+.person-info {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1; /* Растягивает текст на доступное место */
+}
+
+.delete-btn {
+    margin-left: 10px;
+    background-color: #4a90e2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+    border: none;
+    padding: 3px 7px;
+}
+
+.delete-btn:hover {
+    background: #357abd;
+    transform: scale(1.1);
+}
