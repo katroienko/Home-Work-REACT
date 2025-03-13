@@ -1,0 +1,21 @@
+.app { 
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.547);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+
+    /* Центрирование с использованием абсолютного позиционирования */
+    position: absolute;
+    top: 50%;  /* Сдвигаем на 50% по вертикали */
+    left: 50%;  /* Сдвигаем на 50% по горизонтали */
+    transform: translate(-50%, -50%);  /* Это сдвигает элемент на половину его ширины и высоты */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
