@@ -1,0 +1,94 @@
+body {
+  font-size: large;
+}
+
+/* HTML: <div class="loader"></div> */
+.message {
+  width: fit-content;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  overflow: hidden;
+  color: #0000;
+  text-shadow: 0 0 0 #000,10ch 0 0 #000;
+  background: linear-gradient(#000 0 0) bottom left/0% 3px no-repeat;
+  animation: l14 1.5s infinite;
+}
+
+@keyframes l14 {
+    80%  {text-shadow:    0  0 0 #000,18ch 0 0 #000;background-size:100% 3px}
+    100% {text-shadow: -10ch 0 0 #000,0    0 0 #000}
+}
+
+
+.container {}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    --w:10ch;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 30px;
+    letter-spacing: var(--w);
+    width:var(--w);
+    overflow: hidden;
+    white-space: nowrap;
+    text-shadow: 
+      calc(-1*var(--w)) 0, 
+      calc(-2*var(--w)) 0, 
+      calc(-3*var(--w)) 0, 
+      calc(-4*var(--w)) 0,
+      calc(-5*var(--w)) 0, 
+      calc(-6*var(--w)) 0, 
+      calc(-7*var(--w)) 0, 
+      calc(-8*var(--w)) 0, 
+      calc(-9*var(--w)) 0;
+    animation: l16 2s infinite;
+  }
+  .loader:before {
+    content:"Math Quiz";
+  }
+  @keyframes l16 {
+    20% {text-shadow: 
+      calc(-1*var(--w)) 0, 
+      calc(-2*var(--w)) 0 red, 
+      calc(-3*var(--w)) 0, 
+      calc(-4*var(--w)) 0 #ffa516,
+      calc(-5*var(--w)) 0 #63fff4, 
+      calc(-6*var(--w)) 0, 
+      calc(-7*var(--w)) 0, 
+      calc(-8*var(--w)) 0 green, 
+      calc(-9*var(--w)) 0;}
+    40% {text-shadow: 
+      calc(-1*var(--w)) 0, 
+      calc(-2*var(--w)) 0 red, 
+      calc(-3*var(--w)) 0 #e945e9, 
+      calc(-4*var(--w)) 0,
+      calc(-5*var(--w)) 0 green, 
+      calc(-6*var(--w)) 0 orange, 
+      calc(-7*var(--w)) 0, 
+      calc(-8*var(--w)) 0 green, 
+      calc(-9*var(--w)) 0;}
+    60% {text-shadow: 
+      calc(-1*var(--w)) 0 lightblue, 
+      calc(-2*var(--w)) 0, 
+      calc(-3*var(--w)) 0 #e945e9, 
+      calc(-4*var(--w)) 0,
+      calc(-5*var(--w)) 0 green, 
+      calc(-6*var(--w)) 0, 
+      calc(-7*var(--w)) 0 yellow, 
+      calc(-8*var(--w)) 0 #ffa516, 
+      calc(-9*var(--w)) 0 red;}
+    80% {text-shadow: 
+      calc(-1*var(--w)) 0 lightblue, 
+      calc(-2*var(--w)) 0 yellow, 
+      calc(-3*var(--w)) 0 #63fff4, 
+      calc(-4*var(--w)) 0 #ffa516,
+      calc(-5*var(--w)) 0 red, 
+      calc(-6*var(--w)) 0, 
+      calc(-7*var(--w)) 0 grey, 
+      calc(-8*var(--w)) 0 #63fff4, 
+      calc(-9*var(--w)) 0 ;}
+  }
