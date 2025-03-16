@@ -1,5 +1,5 @@
 import CityCard from '../CityCard/CityCard';
-import CitySelector from './CitySelector/CitySelector';
+import CitySelector from '../CitySelector/CitySelector';
 import './App.css'
 
 import { useState } from 'react'
