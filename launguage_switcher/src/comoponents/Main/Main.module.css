@@ -1,0 +1,9 @@
+.wrapperMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: blueviolet;
+    font-weight: 800;
+    font-size: 36px;
+}
