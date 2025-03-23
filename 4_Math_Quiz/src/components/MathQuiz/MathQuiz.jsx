@@ -3,36 +3,33 @@ import styles from "./MathQuiz.module.css";
 import Answer from "../Answer/Answer";
 
 const MathQuiz = () => {
-  const [num1, setNum1] = useState(0);
-  const [num2, setNum2] = useState(0);
+  const [question, setQuestion] = useState({ num1: 0, num2: 0 });
   const [score, setScore] = useState(0);
-  // const [message, setMessage] = useState("");
-  useEffect(() => {
 
+  useEffect(() => {
     generateQuestion();
-    
   }, []);
 
   const generateQuestion = () => {
-    setNum1(Math.floor(Math.random() * 10) + 1);
-    setNum2(Math.floor(Math.random() * 10) + 1);
-    // setMessage("");
+    setQuestion({
+      num1: Math.floor(Math.random() * 10) + 1,
+      num2: Math.floor(Math.random() * 10) + 1,
+    });
   };
 
   const updatePoints = (points) => {
-    setScore(score + points);
+    setScore((prevScore) => prevScore + points);
     setTimeout(generateQuestion, 2000);
   };
 
   return (
-    // 
     <div className={styles.container}>
       <div className={styles.loader}></div>
       <h3>Реши пример</h3>
       <p>
-        {num1} + {num2} = ?
+        {question.num1} + {question.num2} = ?
       </p>
-      <Answer correctAnswer={num1 + num2} updatePoints={updatePoints} />
+      <Answer correctAnswer={question.num1 + question.num2} updatePoints={updatePoints} />
       <p>Счёт: {score}</p>
     </div>
   );

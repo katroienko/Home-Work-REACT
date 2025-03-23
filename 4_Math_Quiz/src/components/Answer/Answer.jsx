@@ -1,5 +1,4 @@
-import MathQuiz from "../MathQuiz/MathQuiz"; 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./Answer.module.css";
 
 const Answer = ({ correctAnswer, updatePoints }) => {
@@ -18,7 +17,7 @@ const Answer = ({ correctAnswer, updatePoints }) => {
   }, [userAnswer]);
 
   const checkAnswer = () => {
-    if (parseInt(userAnswer) === correctAnswer) {
+    if (userAnswer == correctAnswer) {
       updatePoints(1);
       setMessage("Правильно!");
     } else {
@@ -27,15 +26,21 @@ const Answer = ({ correctAnswer, updatePoints }) => {
   };
 
   return (
-    <div className={styles.answerContainer}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        checkAnswer();
+      }}
+      className={styles.answerContainer}
+    >
       <input
         type="number"
         value={userAnswer}
         onChange={(e) => setUserAnswer(e.target.value)}
       />
-      <button onClick={checkAnswer}>Ответить</button>
+      <button type="submit">Ответить</button>
       <p className={styles.message}>{message}</p>
-    </div>
+    </form>
   );
 };
 
