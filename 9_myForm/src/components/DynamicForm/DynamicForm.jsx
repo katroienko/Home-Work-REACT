@@ -27,8 +27,8 @@ function DynamicForm() {
                         {...register('firstField', {
                             required: 'First field is required',
                             minLength: {
-                                value: 3,
-                                message: 'Minimum 3 characters required',
+                                value: 5,
+                                message: 'Minimum 5 characters required',
                             },
                         })}
                         type="text"
