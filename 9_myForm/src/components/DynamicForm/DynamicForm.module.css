@@ -1,6 +1,6 @@
 .input {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin: 8px;
 }
@@ -13,3 +13,7 @@
 input {
     margin: 0 15px;
 }
+
+ .error{
+    color: red;
+ }
