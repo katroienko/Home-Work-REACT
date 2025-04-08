@@ -11,7 +11,7 @@ function ListItems() {
 
   const addItem = () => {
     if (inputValue.trim() !== "") {
-      setItems([...items, inputValue]);
+      setItems(prevItems => [...prevItems, inputValue]);
       setInputValue("");
     }
   };
@@ -25,9 +25,9 @@ function ListItems() {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           className="input"
-          placeholder="Напишыте что-то в список"
+          placeholder="Write something to the list"
         />
-        <button onClick={addItem} className="button">Добавить</button>
+        <button onClick={addItem} className="button">Add</button>
       </div>
       <ul className="list">
         {items.map((item, index) => (
