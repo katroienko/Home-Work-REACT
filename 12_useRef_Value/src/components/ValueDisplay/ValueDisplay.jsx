@@ -1,10 +1,10 @@
 import React, { useRef, useEffect } from "react";
-import styles from './ValueDisplay.module.css'
+// import styles from './ValueDisplay.module.css'
 
 const ValueDisplay = ({ inputValue }) => {
     const prevValueRef = useRef();
-    useEffect(() => {
-        prevValueRef.current = inputValue;
+      useEffect(() => {
+        prevValueRef.current = inputValue;     
     }, [inputValue]);
 
     return (

@@ -1,4 +1,4 @@
-import CatImage from "../App/CatImage/CatImage"
+import CatImage from "../CatImage/CatImage"
 
 function CatImageUse() {
   return (

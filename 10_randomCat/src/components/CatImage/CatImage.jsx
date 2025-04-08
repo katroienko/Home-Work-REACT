@@ -35,6 +35,7 @@ function CatImage() {
                 ) : (
                     <img src={imageUrl} alt="Случайный кот" className={styles.catImage} />
                 )}
+                {error ? <p style={{color: 'red'}}>{error}</p> : null}
             </div>
             <button onClick={fetchCatImage} className={styles.button}>
                 Новое изображение кота

@@ -4,7 +4,7 @@ import styles from "./SinglePost.module.css";
 import { getPostById } from "../../api/posts";
 
 const SinglePost = () => {
-  const { id } = useParams(); // Получаем id из URL
+  const { id } = useParams();
   const [post, setPost] = useState({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
