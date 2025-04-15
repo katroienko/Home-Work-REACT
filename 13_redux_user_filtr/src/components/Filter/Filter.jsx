@@ -11,7 +11,7 @@ function Filter({filtr}) {
 
   return (
     <div>
-      <h2>Filtr</h2>
+      <h2>Filter</h2>
       <input
         type="text"
         value={filter}
