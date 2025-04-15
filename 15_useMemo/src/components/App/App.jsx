@@ -35,10 +35,10 @@ const App = () => {
 
   return (
     <div>
-      <h1>Список пользователей</h1>
+      <h1>User list</h1>
       <input
         type="text"
-        placeholder="Фильтр по имени"
+        placeholder="Filter by name"
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       />
