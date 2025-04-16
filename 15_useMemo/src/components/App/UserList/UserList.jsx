@@ -8,4 +8,4 @@ const UserList = ({ users }) => (
   </ul>
 );
 
-export default UserList;
+export default memo(UserList);
