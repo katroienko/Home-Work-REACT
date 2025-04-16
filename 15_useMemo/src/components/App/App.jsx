@@ -1,5 +1,4 @@
-
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo } from 'react'; 
 import UserList from './UserList/UserList';
 
 const App = () => {
@@ -18,6 +17,7 @@ const App = () => {
 
   const [filter, setFilter] = useState('');
 
+  // Мемоизированная функция фильтрации
   const filterUsers = useCallback(
     (users, query) => {
       const lowerCaseQuery = query.toLowerCase();
@@ -28,6 +28,7 @@ const App = () => {
     []
   );
 
+  // Мемоизированный результат фильтрации
   const filteredUsers = useMemo(
     () => filterUsers(userList, filter),
     [userList, filter, filterUsers]
@@ -47,4 +48,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App;  

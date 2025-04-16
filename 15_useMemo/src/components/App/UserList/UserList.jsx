@@ -1,4 +1,4 @@
-
+import { memo } from "react";
 
 const UserList = ({ users }) => (
   <ul>
