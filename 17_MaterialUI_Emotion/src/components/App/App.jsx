@@ -65,7 +65,7 @@ function App() {
             {mode === 'light' ? <LightModeIcon /> : <DarkModeIcon />}
           </Typography>
           <Button
-            sx= {{backgroundColor: 'darkred'}}
+            sx= {{backgroundColor: 'red'}}
             variant="contained"
             onClick={toggleTheme}
           >
