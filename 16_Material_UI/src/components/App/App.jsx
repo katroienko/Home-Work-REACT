@@ -15,10 +15,10 @@ import DialogTitle from '@mui/material/DialogTitle';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#0D47A1', // Тёмно-синий цвет для AppBar и других элементов primary
+      main: '#0D47A1', 
     },
     secondary: {
-      main: '#00C853', // Ярко-зелёный цвет для кнопок
+      main: '#00C853', 
     },
   },
 });
