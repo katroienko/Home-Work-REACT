@@ -10,10 +10,8 @@ import {
 } from "./mainstyles";
 
 
-
 const MainContacts = () => {
-  // const { colors } = useTheme();
-  // console.log(colors.lightDark);
+
 
   const elements = MainContactsItems.map(({ href, text }) => (
     <li key={text} css={mainContactsItemStyle}>
