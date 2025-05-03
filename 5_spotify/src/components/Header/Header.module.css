@@ -1,0 +1,25 @@
+.header{
+   background-color: var(--background-color);
+   padding: 55px 35px;
+}
+
+.logo {
+   width: 140px;
+   height: 45px;
+}
+
+@media screen and (max-width: 920px) {
+   .logo {
+       width: 100px;
+       height: 32px;
+   }
+  
+}
+
+@media screen and (max-width: 768px) {
+   .logo {
+       width: 80px;
+       height: 26px;
+   }
+  
+}
