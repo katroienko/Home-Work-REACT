@@ -1,4 +1,4 @@
-const footerContactsItems = [
+const MainContactsItems = [
     {
         href: "tel:8 800 000 00 00",
         text: "8 800 000 00 00"
@@ -9,4 +9,4 @@ const footerContactsItems = [
     },
 ];
 
-export default footerContactsItems;
+export default MainContactsItems;

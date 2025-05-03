@@ -16,6 +16,7 @@ export const wrapperStyle2 = css`
     gap: 33px;
     font-weight: 600;
     color:  rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
 `;
 export const wrapperStyle3 = css`
     display: flex;

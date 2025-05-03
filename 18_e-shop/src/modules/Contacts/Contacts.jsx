@@ -6,7 +6,8 @@ import Container from "../../modules/layouts/Container/Container";
 import SectionTitle from "../../shared/components/SectionTitle/SectionTitle";
 import LoadingError from "../../shared/components/LoadingError/LoadingError";
 import FooterContacts from '../Footer/FooterContacts/FooterContacts'
-import RegisterForm from "./RegisterForm/RegisterForm";
+import MainContacts from "./MainContacts/MainContacts";
+import ContactForm from "./ContactForm/ContactForm";
 import SnapChatIcon from '../../shared/components/icons/SnapChatIcon'
 import FacebookColorIcon from '../../shared/components/icons/FacebookColorIcon'
 // import XIcon from '../../shared/components/icons/XIcon'
@@ -33,10 +34,12 @@ const Contacts = () => {
     <div>
       <Container>
         <SectionTitle title="Контакты" />
-        <FooterContacts />
+        {/* <FooterContacts /> */}
+        <MainContacts />
+
         <div css={wrapperStyle}>
           <div>
-            <RegisterForm submitForm={submitForm} />
+            <ContactForm submitForm={submitForm} />
             {error && <LoadingError>{error}</LoadingError>}
           </div>
           <div css={wrapperStyle2}>
@@ -47,7 +50,7 @@ const Contacts = () => {
               <SnapChatIcon />
               <FacebookColorIcon />
               {/* <XIcon /> */}
-              <XIconCopy />
+              <XIconCopy style={{ width: '76px', height: '76px' }} />
             </div>
           </div>
         </div>

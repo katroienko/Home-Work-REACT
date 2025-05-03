@@ -1,21 +1,24 @@
 import { css } from "@emotion/react";
 
-export const mainContactsTitleStyle = css`
-    font-size: 24px;
-    color: red;
-    margin-bottom: 39px;
-`;
 
 export const mainContactsItemStyle = css`
-    margin-bottom: 13px;
+  margin-bottom: 13px;
+  
 `;
 
-export const mainContactsLinkStyle = color =>  css`
-text-decoration: none;
-font-size: 18px;
-color:  #FFFFFF80;
+export const mainContactsLinkStyle = css`
+  text-decoration: none;
+  font-size: 18px;
+  color:rgba(117, 106, 106, 0.72);
 
-:hover {
-    color:  #FFFFFF80;
-}
-`;
+  &:hover {
+    color: #ffffff80;
+  }
+`
+export const mainWrapperStyle = css`
+    margin-bottom: 67px;
+    margin-top: 116px;
+`
+    ;
+
+
