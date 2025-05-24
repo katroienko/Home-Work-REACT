@@ -1,0 +1,30 @@
+.title {
+    font-size: 24px;
+    font-weight: 800px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 500px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.label:hover {
+    color: #1b3073;
+}
+
+.correct {
+    color: rgb(18, 148, 18);
+}
+
+.incorrect {
+    color: rgb(233, 23, 23);
+}
+
+.error {
+    color: rgb(233, 23, 23);
+    font-size: 14px;
+}

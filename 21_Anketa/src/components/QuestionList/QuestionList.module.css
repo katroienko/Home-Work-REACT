@@ -1,0 +1,59 @@
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: #f9faff; /* светлый фон контейнера */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(27, 48, 115, 0.15); /* легкая тень */
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.2;
+    color: #1b3073; /* насыщенный синий цвет */
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+    color: #444; /* темно-серый текст для элементов списка */
+}
+
+.btnBox {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1b3073;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: 2px solid #1b3073;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #fff;
+    color: #1b3073;
+    box-shadow: 0 0 8px rgba(27, 48, 115, 0.5);
+    outline: none;
+}
+
+.btn:focus-visible {
+    outline: 2px solid #1b3073;
+    outline-offset: 2px;
+}
