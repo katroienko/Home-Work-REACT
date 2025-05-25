@@ -1,4 +1,3 @@
-import React from 'react';
 import { useForm } from 'react-hook-form';
 import styles from './DynamicForm.module.css';
 
@@ -9,9 +8,9 @@ function DynamicForm() {
         reset,
         watch,
         formState: { errors },
-    } = useForm({ mode: 'onChange' });
+    } = useForm({ mode: 'onSubmit' });
 
-    const firstField = watch('firstField');
+    const firstField = watch('firstField', '');
 
     const onSubmit = (data) => {
         console.log(data);
@@ -22,7 +21,8 @@ function DynamicForm() {
         <div className={styles.wrapper}>
             <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
                 <div className={styles.input}>
-                    <label htmlFor="inputField">First Field</label>
+                    <p className={styles.hint}>Мinimum 5 characters.</p>
+                    <label htmlFor="inputField"></label>
                     <input
                         {...register('firstField', {
                             required: 'First field is required',
@@ -41,12 +41,16 @@ function DynamicForm() {
                         </div>
                     )}
                 </div>
-                {firstField && !errors.firstField && (
+                 {firstField.length >= 5 &&  (
                     <div className={styles.input}>
-                        <label htmlFor="inputField2">Second Field</label>
+                        <label htmlFor="inputField2"></label>
                         <input
                             {...register('secondField', {
                                 required: 'Second field is required',
+                                minLength: {
+                                value: 5,
+                                message: 'Minimum 5 characters required',
+                            },
                             })}
                             type="text"
                             placeholder="Second field"

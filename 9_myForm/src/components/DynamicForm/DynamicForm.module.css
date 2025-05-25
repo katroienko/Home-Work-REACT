@@ -1,8 +1,86 @@
-.input {
+.wrapper {
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    font-weight: 600;
+ 
+}
+
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}  
+.input p{
+    font-size: 20px;
+
+}
+
+.input input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.input input:focus {
+    border-color: #007bff;
+}
+
+.hint {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+.error {
+    margin-top: 6px;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* .input p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 8px;
+    color: green;
 }
 
 .form {
@@ -16,4 +94,4 @@ input {
 
  .error{
     color: red;
- }
+ } */
